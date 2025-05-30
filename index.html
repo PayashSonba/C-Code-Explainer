@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>C++ Code Explainer - Dark Mode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>C++ Code Explainer</h1>
+        <div class="panes">
+            <div class="pane left-pane">
+                <label for="code-input">C++ Code</label>
+                <div class="examples">
+                    <span>Examples:</span>
+                    <button onclick="loadExample('factorial')">Factorial</button>
+                    <button onclick="loadExample('fibonacci')">Fibonacci</button>
+                    <button onclick="loadExample('sum')">Sum of Array</button>
+                </div>
+                <textarea id="code-input" placeholder="Paste your C++ code here..."></textarea>
+                <button class="trace-btn" onclick="startTrace()">Execute & Trace</button>
+            </div>
+            <div class="pane right-pane">
+                <label>Explanation</label>
+                <div class="explainer-box">
+                    <div class="line-indicator">
+                        <span>Line: </span><span id="current-line">1</span>
+                    </div>
+                    <div id="explanation-output" class="explanation-output">
+                        <em>Click "Execute & Trace" to start explanation.</em>
+                    </div>
+                    <div class="button-row">
+                        <button onclick="previousLine()">Previous</button>
+                        <button onclick="nextLine()">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Made with ❤️ using HTML, CSS & JavaScript</p>
+    </footer>
+    <script src="explainer.js"></script>
+</body>
+
+</html>
