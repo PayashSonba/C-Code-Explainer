@@ -1,8 +1,8 @@
-🧠 C++ Code Explainer - Step-by-Step Execution Visualizer
+##🧠 C++ Code Explainer - Step-by-Step Execution Visualizer
 
 A lightweight Flask-based web application that takes C++ code as input and explains each step of the code dynamically — like a personal code tutor in your browser 👨‍🏫⚙️
 
-🔍 Features
+##🔍 Features
 
 ✏️ Paste C++ code in a textbox
 
